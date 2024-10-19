@@ -36,3 +36,134 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.home, .question-container, .results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home button, .results button {
+  width: 150px;
+}
+
+.option {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 400px; 
+  text-align: left; 
+  border: 2px solid transparent; 
+}
+
+.option:hover {
+  background-color: #ddd;
+  border: 2px solid #4CAF50;
+}
+
+.selected-option {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #708fe3; 
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  gap: 30px;
+}
+
+.navbar-menu li {
+  display: inline-block; 
+}
+
+.navbar-menu li a {
+  color: #f8fafc; 
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 10px 15px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar-menu li a:hover {
+  background-color: #87a4e1; 
+  color: #ffffff; 
+}
+
+.navbar-menu li a:active {
+  background-color: #9333ea; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-menu li a {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
